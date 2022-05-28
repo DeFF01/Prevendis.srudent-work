@@ -214,7 +214,7 @@ h3{
             list-style-type: none;
             li:nth-child(1){
               padding-left: 6rem;
-              background-image: url(../img/Group\ 15.svg);
+              background-image: url(../img/Group15.svg);
               background-position: 15px 5px;
               background-size: 4.2rem 4.2rem;
               background-repeat: no-repeat;
@@ -232,7 +232,7 @@ h3{
             }
             li:nth-child(2){
               padding-left: 6rem;
-              background-image: url(../img/Group\ 16.svg);
+              background-image: url(../img/Group16.svg);
               background-position: 15px 5px;
               background-size: 4.2rem 4.2rem;
               background-repeat: no-repeat;
@@ -250,7 +250,7 @@ h3{
             }
             li:nth-child(3){
               padding-left: 6rem;
-              background-image: url(../img/Group\ 17.svg);
+              background-image: url(../img/Group17.svg);
               background-position: 15px 5px;
               background-size: 4.2rem 4.2rem;
               background-repeat: no-repeat;
@@ -292,6 +292,8 @@ h3{
     .info{
       background: #F6F7FB;
       border-radius: 40px;
+      padding: 25px;
+      margin-bottom: 10px;
       .info__box{
         display: flex;
         justify-content: space-between;
@@ -306,8 +308,8 @@ h3{
           }
           .info__text {
             font-weight: 300;
-            font-size: 16px;
-            line-height: 19px;
+            font-size: 18px;
+            line-height: 21px;
             color: #939393;
           }
         }
@@ -329,7 +331,7 @@ h3{
             flex-wrap: wrap;
             .info__text{
               font-weight: 400;
-              font-size: 14px;
+              font-size: 16px;
               line-height: 16px;
               color: #333333;
               border: 1px solid #aee4fb;
@@ -337,6 +339,7 @@ h3{
               padding: 15px;
               margin: 5px;
               cursor: default;
+              
               
             }
             .info__text:hover{
@@ -386,7 +389,7 @@ h3{
             background: #E7ECF6;
             border-radius: 40px;
             width: 380px;
-
+  
             display: flex;
             .devaces__title{
               font-weight: 300;
@@ -409,7 +412,7 @@ h3{
             background: #E7ECF6;
             border-radius: 40px;
             width: 380px;
-
+  
             display: flex;
             .devaces__title{
               font-weight: 300;
@@ -434,22 +437,76 @@ h3{
           }
         }
       }
-      
+    }
+    
+
+
+    .analysis{
+      max-width: 1240px;
+      padding: 25px;
+      background: #F6F7FB;
+      border-radius: 40px;
+      display:flex;
+      justify-content: space-between;
+      background-color: #F6F7FB;;
+      position: relative;
+        .analysis__box-title{
+          .analysis__title{
+          font-weight: 300;
+          font-size: 34px;
+          line-height: 40px;
+          color: #333333;
+          margin-bottom: 25px;
+          }
+          .analysis__subtitle{
+            width: 411px;
+          }
+      }
+      .slider{
+        width: 515px;
+        overflow: hidden;
+        .slider-container {
+          .items{
+            display: flex;
+            .item{
+              margin: 0 5px;
+              transition: all ease 1s;
+            }
+          }
+        }
+      }
+      .arrow-box{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        .arrow{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          align-content: center;
+          border: none;
+      background: none;
+      text-align: center;
+      margin: 21px 10px;
+      cursor: pointer;
+      width: 75px;
+      height: 75px;
+      padding: 0;
+        }
+        .arrow:hover{
+          box-shadow: 0 0 20px rgba(0, 0, 0, .2) inset;
+          border-radius: 100%;
+        }
+        .arrow:active{
+          box-shadow: 0 0 40px rgba(0, 0, 0, .2) inset;
+          border-radius: 100%;
+        }
+      }
     }
     
   }
 
-}
-
-.devaces {
-}
-.devaces__logo {
-}
-.devaces__item {
-}
-.devase__title {
-}
-.div {
 }
 
 
