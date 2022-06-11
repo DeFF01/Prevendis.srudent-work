@@ -1,3 +1,6 @@
+
+
+
 let item = document.querySelectorAll('.item');
 const itemLength = item.length;
 // console.log(itemLength);
