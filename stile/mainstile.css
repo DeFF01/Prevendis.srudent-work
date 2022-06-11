@@ -172,7 +172,7 @@ body {
 .ofer .container .ofer__mobile-big {
   position: relative;
   height: 500px;
-  margin-bottom: 180px;
+  margin-bottom: 230px;
 }
 .ofer .container .ofer__mobile-big .mobile-big {
   position: absolute;
@@ -187,7 +187,7 @@ body {
 }
 .ofer .container .ofer_box .mobile-litle {
   height: 800px;
-  margin-bottom: 180px;
+  margin-bottom: 60px;
 }
 .ofer .container .ofer_box .explanation .explanation-title {
   display: flex;
@@ -195,9 +195,13 @@ body {
   flex-direction: column;
 }
 .ofer .container .ofer_box .explanation .explanation-title h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
   font-size: 44px;
-  font-weight: normal;
-  margin-bottom: 25px;
+  line-height: 52px;
+  text-align: center;
+  color: #333333;
 }
 .ofer .container .ofer_box .explanation .explanation-title p {
   width: 410px;
@@ -535,7 +539,7 @@ body {
 }
 
 .mobile-app {
-  margin-bottom: 180px;
+  margin-bottom: 60px;
 }
 .mobile-app .conteiner {
   width: 100%;
@@ -580,7 +584,7 @@ body {
 
 .specialists .conteiner {
   background: #1FCD99;
-  padding-bottom: 100px;
+  padding-bottom: 30px;
 }
 .specialists .conteiner .specialists__title {
   font-weight: 300;
@@ -589,7 +593,7 @@ body {
   text-align: center;
   color: #FFFFFF;
   margin: 0 auto 25px;
-  padding-top: 100px;
+  padding-top: 30px;
 }
 .specialists .conteiner .specialists__subtitle {
   font-weight: 300;
@@ -603,7 +607,7 @@ body {
   width: 1240px;
   margin: 0 auto;
   display: flex;
-  margin-bottom: 90px;
+  margin-bottom: 30px;
 }
 .specialists .conteiner .box .box-left {
   width: 50%;
