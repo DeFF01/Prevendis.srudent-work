@@ -8,6 +8,7 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /*__________Шапка сайта__________*/
@@ -427,6 +428,7 @@ body {
   justify-content: space-between;
   background-color: #F6F7FB;
   position: relative;
+  margin-bottom: 15px;
 }
 .operating-principle .container .analysis .analysis__box-title .analysis__title {
   font-weight: 300;
@@ -603,66 +605,27 @@ body {
   color: #FFFFFF;
   margin-bottom: 50px;
 }
-.specialists .conteiner .box {
-  width: 1240px;
-  margin: 0 auto;
+.specialists .conteiner .spicialists__mobile-box {
   display: flex;
-  margin-bottom: 30px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
 }
-.specialists .conteiner .box .box-left {
-  width: 50%;
+.specialists .conteiner .spicialists__mobile-box .spicialists__mobile {
+  margin-right: 10px;
 }
-.specialists .conteiner .box .box-left .info {
-  display: inline-block;
-  background-color: #FFFFFF;
+.specialists .conteiner .spicialists__mobile-box .spicialists__mobile img {
+  background-color: white;
+  padding: 23px;
   border-radius: 40px;
-  padding: 25px 45px 0;
+  margin-bottom: 20px;
 }
-.specialists .conteiner .box .box-left .info .info-title {
+.specialists .conteiner .spicialists__mobile-box .spicialists__mobile p {
   font-weight: 300;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
-  color: #333333;
-  text-align: center;
-  margin-bottom: 15px;
-}
-.specialists .conteiner .box .box-left .info:nth-child(1) {
-  margin: 0 20px 20px 0;
-}
-.specialists .conteiner .box .box-left .info:nth-child(2) {
-  margin: 0 0 20px 0;
-}
-.specialists .conteiner .box .box-left .info:nth-child(3) {
-  padding: 25px 53px 0;
-}
-.specialists .conteiner .box .box-right {
-  width: 50%;
-}
-.specialists .conteiner .box .box-right .conteiner .info {
-  display: inline-block;
-  background-color: #FFFFFF;
-  border-radius: 40px;
-  padding: 25px 52px 0;
-}
-.specialists .conteiner .box .box-right .conteiner .info .info-title {
-  font-weight: 300;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: center;
-  color: #333333;
-  text-align: center;
-  margin-bottom: 15px;
-}
-.specialists .conteiner .box .box-right .conteiner .info:nth-child(1) {
-  margin: 0 0 20px 0;
-  padding: 25px 74px 0;
-}
-.specialists .conteiner .box .box-right .conteiner .info:nth-child(2) {
-  margin: 0 10px 0 0;
-}
-.specialists .conteiner .box .box-right .conteiner .info:nth-child(3) {
-  margin: 0 0 0 10px;
+  color: #FFFFFF;
 }
 .specialists .conteiner .registr {
   width: 1240px;
