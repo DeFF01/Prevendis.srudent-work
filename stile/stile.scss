@@ -156,6 +156,7 @@ h1{
   font-size: 64px;
   line-height: 75px;
   font-weight:300;
+  margin-bottom: 30px;
 }
 h3{
   font-size: 24px;
@@ -647,6 +648,9 @@ margin: 0  auto 25px;
 
 padding-top: 30px;
   }
+  
+  
+ 
   .specialists__subtitle {
     font-weight: 300;
     font-size: 18px;
@@ -655,7 +659,7 @@ padding-top: 30px;
     color: #FFFFFF;
     margin-bottom: 50px;
   }
-
+  
   .spicialists__mobile-box{
     display: flex;
     align-items: center;
@@ -697,9 +701,16 @@ padding-top: 30px;
           width: 596px;
           margin-bottom: 20px;
       }
-      .box-subtitle{
+      .registr-subtitle{
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        width: 220px;
+      }
+      .box-speciality{
         display: flex;
-        .registr-subtitle{
+        .registr-speciality{
           margin-right: 10px;
           border: 1px solid #ffff;
           border-radius: 20px;
@@ -707,7 +718,7 @@ padding-top: 30px;
           color: #FFFFFF;
           cursor: default;
         }
-        .registr-subtitle:hover{
+        .registr-speciality:hover{
           background-color: #E5E5E5;
           color: #1FCD99;
           transition: .5s;
@@ -787,6 +798,79 @@ transition: .15s ease-in-out;
 }
   }
 
+  .footer {
+    background: #f1f1f1;
+    .conteiner {
+
+      width: 1208px;
+      margin: 0 auto;
+      padding-top: 60px;
+      .footer__fbox{
+        display: flex;
+        justify-content: space-between;
+
+        .footer__element{
+
+          a{
+            text-decoration: none;
+          }
+          &-text{
+          
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: #939393;
+          }
+
+          .footer__mobile-number a, .footer__mail a{
+            font-weight: 300;
+            font-size: 34px;
+            line-height: 40px;
+            color: #333333;
+            text-decoration: none;
+            position: relative;
+          }
+          .footer__mobile-number a:after,.footer__mail a:after{
+            content: "";
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: -3px;
+            width: 0;
+            height: 2px; 
+            background-color: #333333;
+            transition: width 0.5s; 
+
+          }
+          .footer__mobile-number a:hover:after,.footer__mail a:hover:after{
+            content: "";
+            width: 100%;
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: -3px;
+            height: 2px;
+            background-color: #333333;
+            transition: width 0.5s;
+
+          }
+          .footer__mobile-number,.footer__mail,.footer__download{
+            margin-bottom: 100px;
+          }
+          .footer__privacy-policy,.footer__terms-of-use{
+            font-weight: 400;
+font-size: 14px;
+line-height: 16px;
+color: #939393;
+          }
+        }
+      }
+      
+  }
+  }
+  
+
+  
 
 
 

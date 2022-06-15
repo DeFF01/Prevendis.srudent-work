@@ -3,6 +3,12 @@
  * Copyright 2020 - 2021 Alexander Maltsev
  * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
  */
+
+
+ $(".form-control").mask("+7(999)999-9999");
+
+
+
  (function() {
 	if (typeof window.CustomEvent === 'function') return false;
 	function CustomEvent(event, params) {

@@ -152,6 +152,7 @@ body {
   font-size: 64px;
   line-height: 75px;
   font-weight: 300;
+  margin-bottom: 30px;
 }
 .content__title h3 {
   font-size: 24px;
@@ -646,10 +647,17 @@ body {
   width: 596px;
   margin-bottom: 20px;
 }
-.specialists .conteiner .registr .box-text .box-subtitle {
+.specialists .conteiner .registr .box-text .registr-subtitle {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FFFFFF;
+  width: 220px;
+}
+.specialists .conteiner .registr .box-text .box-speciality {
   display: flex;
 }
-.specialists .conteiner .registr .box-text .box-subtitle .registr-subtitle {
+.specialists .conteiner .registr .box-text .box-speciality .registr-speciality {
   margin-right: 10px;
   border: 1px solid white;
   border-radius: 20px;
@@ -657,7 +665,7 @@ body {
   color: #FFFFFF;
   cursor: default;
 }
-.specialists .conteiner .registr .box-text .box-subtitle .registr-subtitle:hover {
+.specialists .conteiner .registr .box-text .box-speciality .registr-speciality:hover {
   background-color: #E5E5E5;
   color: #1FCD99;
   transition: 0.5s;
@@ -721,6 +729,67 @@ body {
 }
 .specialists .conteiner .registr .box-register .btn-primary:hover {
   box-shadow: 0 0 10px 0 #FE5C01 inset, 0 0 10px 4px #FE5C01;
+}
+
+.footer {
+  background: #f1f1f1;
+}
+.footer .conteiner {
+  width: 1208px;
+  margin: 0 auto;
+  padding-top: 60px;
+}
+.footer .conteiner .footer__fbox {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .conteiner .footer__fbox .footer__element a {
+  text-decoration: none;
+}
+.footer .conteiner .footer__fbox .footer__element-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #939393;
+}
+.footer .conteiner .footer__fbox .footer__element .footer__mobile-number a, .footer .conteiner .footer__fbox .footer__element .footer__mail a {
+  font-weight: 300;
+  font-size: 34px;
+  line-height: 40px;
+  color: #333333;
+  text-decoration: none;
+  position: relative;
+}
+.footer .conteiner .footer__fbox .footer__element .footer__mobile-number a:after, .footer .conteiner .footer__fbox .footer__element .footer__mail a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #333333;
+  transition: width 0.5s;
+}
+.footer .conteiner .footer__fbox .footer__element .footer__mobile-number a:hover:after, .footer .conteiner .footer__fbox .footer__element .footer__mail a:hover:after {
+  content: "";
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  height: 2px;
+  background-color: #333333;
+  transition: width 0.5s;
+}
+.footer .conteiner .footer__fbox .footer__element .footer__mobile-number, .footer .conteiner .footer__fbox .footer__element .footer__mail, .footer .conteiner .footer__fbox .footer__element .footer__download {
+  margin-bottom: 100px;
+}
+.footer .conteiner .footer__fbox .footer__element .footer__privacy-policy, .footer .conteiner .footer__fbox .footer__element .footer__terms-of-use {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #939393;
 }
 
 /*# sourceMappingURL=mainstile.css.map */
