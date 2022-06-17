@@ -1,14 +1,15 @@
 
 
-let itemTreament = document.querySelectorAll('.item__treatment');
-const itemLengthTreament = itemTreament.length;
+
+let item = document.querySelectorAll('.item');
+const itemLength = item.length;
 // console.log(itemLength);
 
-const rightArrow__treatment = document.querySelector("#rightArrow__treatment");
-const leftArrow__treatment = document.querySelector("#leftArrow__treatment");
+const rightArrow = document.querySelector("#rightArrow");
+const leftArrow = document.querySelector("#leftArrow");
 let slider = [];
 
-for (let i = 0; i<itemLengthTreament; i++) {
+for (let i = 0; i<itemLength; i++) {
   slider[i] = item[i];
   // console.log(slider[i]);
   item[i].remove();
@@ -19,22 +20,22 @@ let offset = 0;
 function burgerSlider() {
   let div = document.createElement('div');
   div = slider[slider.length-1];
-  div.classList.add('item__treatment');
+  div.classList.add('item');
   div.style.left = -250 + 'px';
   // console.log(div);
-  document.querySelector('.items__treatment').appendChild(div); 
+  document.querySelector('.items').appendChild(div); 
   
   
   div = slider[step];
-  div.classList.add('item__treatment');
+  div.classList.add('item');
   div.style.left = offset*250 + 'px';
   // console.log(div);
-  document.querySelector('.items__treatment').appendChild(div); 
+  document.querySelector('.items').appendChild(div); 
   div = slider[step+1];
-  div.classList.add('item__treatment');
+  div.classList.add('item');
   div.style.left = offset*250 + 250 + 'px';
   // console.log(div);
-  document.querySelector('.items__treatment').appendChild(div); 
+  document.querySelector('.items').appendChild(div); 
   offset = 1;
   
 }
@@ -52,10 +53,10 @@ function burgerSliderL() {
   console.log(step);
   let div = document.createElement('div');
   div = slider[step];
-  div.classList.add('item__treatment');
+  div.classList.add('item');
   div.style.left = offset*250 + 'px';
   // console.log(div);
-  document.querySelector('.items__treatment').appendChild(div); 
+  document.querySelector('.items').appendChild(div); 
     
   if (step == 0) {
     step = (slider.length-1);
@@ -67,9 +68,9 @@ function burgerSliderL() {
 }
 
 function left() {
-  leftArrow__treatment.onclick = null;
+  leftArrow.onclick = null;
   // 
-  let slider2 = document.querySelectorAll('.item__treatment');
+  let slider2 = document.querySelectorAll('.item');
   let offset2 = -1;
   // console.log(slider2.length);
   for (let i = 0; i<slider2.length; i++) {
@@ -79,7 +80,7 @@ function left() {
   setTimeout(function() {
     slider2[0].remove();
     burgerSliderL();
-    leftArrow__treatment.onclick = left;
+    leftArrow.onclick = left;
   }, 100);
   
 }
@@ -99,10 +100,10 @@ function burgerSliderR() {
   let offset = -1;
   let div = document.createElement('div');
   div = slider[step];
-  div.classList.add('item__treatment');
+  div.classList.add('item');
   div.style.left = offset*250 + 'px';
   // console.log(div);
-  document.querySelector('.items__treatment').insertBefore(div, items.firstElementChild);
+  document.querySelector('.items').insertBefore(div, items.firstElementChild);
   if (step == (slider.length-1)) {
       step = 0;
    } else {
@@ -113,9 +114,9 @@ function burgerSliderR() {
 }
 
 function right() {
-  rightArrow__treatment.onclick = null;
+  rightArrow.onclick = null;
   
-  let slider2 = document.querySelectorAll('.item__treatment');
+  let slider2 = document.querySelectorAll('.item');
   let offset2 = (slider2.length-1);
  
   for (let i = (slider2.length-1); i>=0; i--) {
@@ -125,7 +126,7 @@ function right() {
   setTimeout(function() {
     slider2[(slider2.length-1)].remove();
      burgerSliderR();
-     rightArrow__treatment.onclick = right;
+    rightArrow.onclick = right;
   }, 100);
 }
 
@@ -133,5 +134,5 @@ function right() {
 burgerSlider();
 step = 0;
 
-leftArrow__treatment.onclick = left;
-rightArrow__treatment.onclick = right;
+leftArrow.onclick = left;
+rightArrow.onclick = right;
