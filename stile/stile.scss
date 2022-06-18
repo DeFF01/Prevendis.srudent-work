@@ -135,6 +135,7 @@ width: 30%;
     height: 800px;
     background-color: #44BBEE;
     max-width: 100%;
+    position: relative;
     @media only screen and (max-width: 600px){
 height: 650px;
 .content__title{
@@ -149,6 +150,7 @@ height: 650px;
 
 .content__word{
   color: #FFFFFF;
+
 }
 
 .content__word:nth-child(1){
@@ -303,9 +305,12 @@ h1{
     }
     @media only screen and (max-width: 450px){
       h1{
-        width: 450px;
+        
+
         font-size: 42px;
         margin: 0 auto;
+        line-height: 42px;
+        margin-bottom: 10px;
         
       }
        }
@@ -316,6 +321,7 @@ h1{
           min-width: 200px;
           font-size: 34px;
           margin: 0 auto;
+          font-size: 21px;
           
         }
          }
@@ -332,6 +338,7 @@ h3{
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .ofer {
