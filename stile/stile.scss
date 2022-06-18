@@ -148,7 +148,7 @@ height: 650px;
 }
 
 .content__word{
-  color: black;
+  color: #FFFFFF;
 }
 
 .content__word:nth-child(1){
@@ -269,12 +269,12 @@ height: 650px;
 }
 
 .content__title{
-  color: black;
+  color: #FFFFFF;
   max-width: 600px;
   text-align: center;
   position: absolute;
   left: 50%;
-  top: 25%;
+  top: 50%;
   transform: translate(-50%, -50%); 
                     
 
@@ -312,7 +312,8 @@ h1{
 
        @media only screen and (max-width: 390px){
         h1{
-          width: 55%;
+          max-width: 600px;
+          min-width: 200px;
           font-size: 34px;
           margin: 0 auto;
           
