@@ -340,10 +340,10 @@ body {
 @media only screen and (max-width: 390px) {
   .content__title h1 {
     max-width: 600px;
-    min-width: 200px;
+    min-width: 250px;
     font-size: 34px;
     margin: 0 auto;
-    font-size: 21px;
+    font-size: 28px;
   }
 }
 
@@ -507,6 +507,11 @@ h3 {
   font-weight: 300;
   margin-bottom: 80px;
 }
+@media only screen and (max-width: 820px) {
+  .operating-principle .container .operating-principle__logo {
+    margin-bottom: 30px;
+  }
+}
 .operating-principle .container .info {
   background: #F6F7FB;
   border-radius: 40px;
@@ -516,6 +521,12 @@ h3 {
 .operating-principle .container .info .info__box {
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 820px) {
+  .operating-principle .container .info .info__box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .operating-principle .container .info .info__box .ingo__box-left {
   width: 411px;
@@ -527,14 +538,27 @@ h3 {
   color: #333333;
   margin-bottom: 24px;
 }
+@media only screen and (max-width: 350px) {
+  .operating-principle .container .info .info__box .ingo__box-left .info__title {
+    text-align: center;
+  }
+}
 .operating-principle .container .info .info__box .ingo__box-left .info__text {
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
   color: #939393;
 }
+@media only screen and (max-width: 420px) {
+  .operating-principle .container .info .info__box .ingo__box-left .info__text {
+    text-align: justify;
+  }
+  .operating-principle .container .info .info__box .ingo__box-left .info__text br {
+    display: none;
+  }
+}
 .operating-principle .container .info .info__box .ingo__box-right {
-  width: 510px;
+  width: 410px;
   border-radius: 40px;
   background: #FFFFFF;
   padding: 24px;
@@ -546,6 +570,11 @@ h3 {
   line-height: 22px;
   color: #333333;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 385px) {
+  .operating-principle .container .info .info__box .ingo__box-right .info__title {
+    text-align: center;
+  }
 }
 .operating-principle .container .info .info__box .ingo__box-right .info__text-box {
   display: flex;
@@ -562,6 +591,14 @@ h3 {
   margin: 5px;
   cursor: default;
 }
+@media only screen and (max-width: 420px) {
+  .operating-principle .container .info .info__box .ingo__box-right .info__text-box {
+    justify-content: center;
+  }
+  .operating-principle .container .info .info__box .ingo__box-right .info__text-box .info__text:nth-child(3) {
+    order: 1;
+  }
+}
 .operating-principle .container .info .info__box .ingo__box-right .info__text-box .info__text:hover {
   background-color: #afe4fa;
   transition: background-color 0.7s;
@@ -573,9 +610,23 @@ h3 {
   color: #333333;
   margin-bottom: 24px;
 }
+@media only screen and (max-width: 580px) {
+  .operating-principle .container .info .devaces .devaces__logo {
+    text-align: center;
+  }
+}
 .operating-principle .container .info .devaces .devaces-box {
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 580px) {
+  .operating-principle .container .info .devaces .devaces-box {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .operating-principle .container .info .devaces .devaces-box .devaces__item {
+    margin: 5px;
+  }
 }
 .operating-principle .container .info .devaces .devaces-box .devaces__item {
   background: #E7ECF6;
@@ -583,7 +634,24 @@ h3 {
   width: 380px;
   display: flex;
 }
-.operating-principle .container .info .devaces .devaces-box .devaces__item .devaces__title {
+@media only screen and (max-width: 1220px) {
+  .operating-principle .container .info .devaces .devaces-box .devaces__item {
+    max-width: 33%;
+    max-height: 33%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .operating-principle .container .info .devaces .devaces-box .devaces__item .devaces__img {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .operating-principle .container .info .devaces .devaces-box .devaces__item {
+    height: 200px;
+    min-width: 170px;
+  }
+}
+.operating-principle .container .info .devaces .devaces-box .devaces__title {
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
@@ -591,20 +659,30 @@ h3 {
   width: 107px;
   margin: 20px 0 0 20px;
 }
-.operating-principle .container .info .devaces .devaces-box .devaces__item .devaces__img {
+@media only screen and (max-width: 630px) {
+  .operating-principle .container .info .devaces .devaces-box .devaces__title {
+    width: auto;
+  }
+}
+.operating-principle .container .info .devaces .devaces-box .devaces__img {
   margin-top: 100px;
   background: url(../img/mi1.svg) no-repeat;
   width: 193.02px;
   height: 200.02px;
   background-size: 100%;
 }
-.operating-principle .container .info .devaces .devaces-box .devaces__item:nth-child(2) {
+@media only screen and (max-width: 630px) {
+  .operating-principle .container .info .devaces .devaces-box .devaces__img {
+    height: 70px;
+  }
+}
+.operating-principle .container .info .devaces .devaces__item:nth-child(2) {
   background: #E7ECF6;
   border-radius: 40px;
   width: 380px;
   display: flex;
 }
-.operating-principle .container .info .devaces .devaces-box .devaces__item:nth-child(2) .devaces__title {
+.operating-principle .container .info .devaces .devaces__item:nth-child(2) .devaces__title {
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
@@ -612,20 +690,30 @@ h3 {
   width: 107px;
   margin: 20px 0 0 20px;
 }
-.operating-principle .container .info .devaces .devaces-box .devaces__item:nth-child(2) .devaces__img {
+@media only screen and (max-width: 630px) {
+  .operating-principle .container .info .devaces .devaces__item:nth-child(2) .devaces__title {
+    width: auto;
+  }
+}
+.operating-principle .container .info .devaces .devaces__item:nth-child(2) .devaces__img {
   margin-top: 80px;
   background: url(../img/image5.png) no-repeat;
   width: 193.02px;
   height: 255.02px;
   background-size: 100%;
 }
-.operating-principle .container .info .devaces .devaces-box .devaces__item:nth-child(3) {
+@media only screen and (max-width: 825px) {
+  .operating-principle .container .info .devaces .devaces__item:nth-child(2) .devaces__img {
+    height: auto;
+  }
+}
+.operating-principle .container .info .devaces .devaces__item:nth-child(3) {
   background: #E7ECF6;
   border-radius: 40px;
   width: 380px;
   display: flex;
 }
-.operating-principle .container .info .devaces .devaces-box .devaces__item:nth-child(3) .devaces__title {
+.operating-principle .container .info .devaces .devaces__item:nth-child(3) .devaces__title {
   font-weight: 300;
   font-size: 24px;
   line-height: 28px;
@@ -633,18 +721,38 @@ h3 {
   width: 107px;
   margin: 20px 0 0 20px;
 }
-.operating-principle .container .info .devaces .devaces-box .devaces__item:nth-child(3) .devaces__img {
+@media only screen and (max-width: 630px) {
+  .operating-principle .container .info .devaces .devaces__item:nth-child(3) .devaces__title {
+    width: auto;
+  }
+}
+.operating-principle .container .info .devaces .devaces__item:nth-child(3) .devaces__img {
   margin-top: 130px;
   background: url(../img/image6.png) no-repeat;
   width: 193.02px;
   height: 180.02px;
   background-size: 100%;
 }
-.operating-principle .container .info .devaces .devaces-box .devaces__item:hover {
+@media only screen and (max-width: 825px) {
+  .operating-principle .container .info .devaces .devaces__item:nth-child(3) .devaces__img {
+    margin-top: 100px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .operating-principle .container .info .devaces .devaces__item:nth-child(3) .devaces__img {
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 630px) {
+  .operating-principle .container .info .devaces .devaces__title {
+    width: auto;
+  }
+}
+.operating-principle .container .info .devaces .devaces__item:hover {
   background-color: #ccf4ff;
   transition: background-color 0.7s;
 }
-.operating-principle .container .analysis {
+.operating-principle .analysis {
   max-width: 1240px;
   padding: 25px;
   background: #F6F7FB;
@@ -655,34 +763,34 @@ h3 {
   position: relative;
   margin-bottom: 15px;
 }
-.operating-principle .container .analysis .analysis__box-title .analysis__title {
+.operating-principle .analysis .analysis__box-title .analysis__title {
   font-weight: 300;
   font-size: 34px;
   line-height: 40px;
   color: #333333;
   margin-bottom: 25px;
 }
-.operating-principle .container .analysis .analysis__box-title .analysis__subtitle {
+.operating-principle .analysis .analysis__box-title .analysis__subtitle {
   width: 411px;
 }
-.operating-principle .container .analysis .slider {
+.operating-principle .analysis .slider {
   width: 515px;
   overflow: hidden;
 }
-.operating-principle .container .analysis .slider .slider-container .items {
+.operating-principle .analysis .slider .slider-container .items {
   display: flex;
 }
-.operating-principle .container .analysis .slider .slider-container .items .item {
+.operating-principle .analysis .slider .slider-container .items .item {
   margin: 0 5px;
   transition: all ease 1s;
 }
-.operating-principle .container .analysis .arrow-box {
+.operating-principle .analysis .arrow-box {
   position: absolute;
   bottom: 0;
   left: 0;
   display: flex;
 }
-.operating-principle .container .analysis .arrow-box .arrow {
+.operating-principle .analysis .arrow-box .arrow {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -696,15 +804,15 @@ h3 {
   height: 75px;
   padding: 0;
 }
-.operating-principle .container .analysis .arrow-box .arrow:hover {
+.operating-principle .analysis .arrow-box .arrow:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) inset;
   border-radius: 100%;
 }
-.operating-principle .container .analysis .arrow-box .arrow:active {
+.operating-principle .analysis .arrow-box .arrow:active {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
   border-radius: 100%;
 }
-.operating-principle .container .treatment {
+.operating-principle .treatment {
   max-width: 1240px;
   padding: 25px;
   background: #F6F7FB;
@@ -715,34 +823,34 @@ h3 {
   position: relative;
   margin-bottom: 80px;
 }
-.operating-principle .container .treatment .treatment__box-title .treatment__title {
+.operating-principle .treatment .treatment__box-title .treatment__title {
   font-weight: 300;
   font-size: 34px;
   line-height: 40px;
   color: #333333;
   margin-bottom: 25px;
 }
-.operating-principle .container .treatment .treatment__box-title .treatment__subtitle {
+.operating-principle .treatment .treatment__box-title .treatment__subtitle {
   width: 411px;
 }
-.operating-principle .container .treatment .slider__treatment {
+.operating-principle .treatment .slider__treatment {
   width: 515px;
   overflow: hidden;
 }
-.operating-principle .container .treatment .slider__treatment .slider__container-treatment .items__treatment {
+.operating-principle .treatment .slider__treatment .slider__container-treatment .items__treatment {
   display: flex;
 }
-.operating-principle .container .treatment .slider__treatment .slider__container-treatment .items__treatment .item__treatment {
+.operating-principle .treatment .slider__treatment .slider__container-treatment .items__treatment .item__treatment {
   margin: 0 5px;
   transition: all ease 1s;
 }
-.operating-principle .container .treatment .arrow-box {
+.operating-principle .treatment .arrow-box {
   position: absolute;
   bottom: 0;
   left: 0;
   display: flex;
 }
-.operating-principle .container .treatment .arrow-box .arrow__treatment {
+.operating-principle .treatment .arrow-box .arrow__treatment {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -756,11 +864,11 @@ h3 {
   height: 75px;
   padding: 0;
 }
-.operating-principle .container .treatment .arrow-box .arrow__treatment:hover {
+.operating-principle .treatment .arrow-box .arrow__treatment:hover {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) inset;
   border-radius: 100%;
 }
-.operating-principle .container .treatment .arrow-box .arrow__treatment:active {
+.operating-principle .treatment .arrow-box .arrow__treatment:active {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.2) inset;
   border-radius: 100%;
 }
