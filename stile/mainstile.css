@@ -22,6 +22,7 @@ body {
 .header .conteiner {
   width: 90%;
   margin: 0 auto;
+  pad: 0 10px;
 }
 
 .hat {
@@ -118,11 +119,6 @@ body {
 @media only screen and (max-width: 480px) {
   .hat__logo {
     margin-right: 100px;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .hat__logo {
-    margin-right: 30px;
   }
 }
 
@@ -341,8 +337,6 @@ body {
   .content__title h1 {
     max-width: 600px;
     min-width: 250px;
-    font-size: 34px;
-    margin: 0 auto;
     font-size: 28px;
   }
 }
@@ -643,6 +637,7 @@ h3 {
 @media only screen and (max-width: 1000px) {
   .operating-principle .container .info .devaces .devaces-box .devaces__item .devaces__img {
     width: 100%;
+    height: 100px;
   }
 }
 @media only screen and (max-width: 630px) {
@@ -661,7 +656,7 @@ h3 {
 }
 @media only screen and (max-width: 630px) {
   .operating-principle .container .info .devaces .devaces-box .devaces__title {
-    width: auto;
+    width: 65px;
   }
 }
 .operating-principle .container .info .devaces .devaces-box .devaces__img {
