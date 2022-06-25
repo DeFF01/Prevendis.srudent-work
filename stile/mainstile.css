@@ -420,6 +420,7 @@ h3 {
 }
 .ofer .ofer_box .explanation .explanation-list ul {
   list-style-type: none;
+  padding-left: 0;
 }
 .ofer .ofer_box .explanation .explanation-list ul li:nth-child(1) {
   padding-left: 6rem;
