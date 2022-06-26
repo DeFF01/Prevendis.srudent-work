@@ -623,7 +623,8 @@ color: #333333;
                @media only screen and (max-width: 1000px){
                 .devaces__img{
                   width: 100%;
-                  height: 100px;
+                  height: 100%;
+                  
 
                 }
                  }
@@ -640,7 +641,7 @@ color: #333333;
               font-size: 24px;
               line-height: 28px;
               color: #333333;
-              width: 107px;
+              width: 30%;
               margin: 20px 0 0 20px;
               @media only screen and (max-width: 630px){
                 width: 65px;
@@ -741,28 +742,44 @@ color: #333333;
     .analysis{
       max-width: 1240px;
       padding: 25px;
-      background: #F6F7FB;
       border-radius: 40px;
       display:flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      background-color: #F6F7FB;;
+      background-color: #F6F7FB;
       position: relative;
       margin-bottom: 15px;
         .analysis__box-title{
+          @media only screen and (max-width: 993px){
+            margin: 0 auto;
+              }
           .analysis__title{
           font-weight: 300;
           font-size: 34px;
           line-height: 40px;
           color: #333333;
           margin-bottom: 25px;
+          @media only screen and (max-width: 993px){
+            text-align: center;
+              }
+
           }
           .analysis__subtitle{
-            width: 411px;
+            max-width: 411px;
+            @media only screen and (max-width: 993px){
+              text-align: center;;
+                }
           }
       }
       .slider{
         width: 515px;
         overflow: hidden;
+        @media only screen and (max-width: 993px){
+          margin: 0 auto 75px;
+            }
+            @media only screen and (max-width: 585px){
+              width: 260px;
+                }
         .slider-container {
           .items{
             display: flex;
@@ -778,6 +795,11 @@ color: #333333;
         bottom: 0;
         left: 0;
         display: flex;
+        @media only screen and (max-width: 993px){
+          bottom: -75px;
+          left: 50%;
+          transform: translate(-50%, -50%);
+            }
         .arrow{
           display: flex;
           align-items: center;

@@ -103,6 +103,7 @@ function burgerSliderR() {
   div.classList.add('item');
   div.style.left = offset*250 + 'px';
   // console.log(div);
+  
   document.querySelector('.items').insertBefore(div, items.firstElementChild);
   if (step == (slider.length-1)) {
       step = 0;
