@@ -1050,9 +1050,7 @@ margin: 0  auto 25px;
 
 padding-top: 30px;
   }
-  
-  
- 
+
   .specialists__subtitle {
     font-weight: 300;
     font-size: 18px;
@@ -1060,6 +1058,9 @@ padding-top: 30px;
     text-align: center;
     color: #FFFFFF;
     margin-bottom: 50px;
+    @media only screen and (max-width: 570px){
+      padding: 0 10px;
+  }
   }
   
   .spicialists__mobile-box{
@@ -1067,6 +1068,10 @@ padding-top: 30px;
     align-items: center;
     justify-content: center;
     margin-bottom: 50px;
+    flex-wrap: wrap;
+    @media only screen and (max-width: 570px){
+      display: none;
+  }
     .spicialists__mobile{
       margin-right: 10px;
       img{
@@ -1092,8 +1097,15 @@ padding-top: 30px;
     border-radius: 40px;
     margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    @media only screen and (max-width: 1200px){
+      justify-content: center;
+  }
     .box-text{
+      display: flex;
+    flex-direction: column;
+    align-items: center;
       .registr-title{
         font-family: 'Roboto';
           font-style: normal;
@@ -1101,8 +1113,17 @@ padding-top: 30px;
           font-size: 34px;
           line-height: 40px;
           color: #FFFFFF;
-          width: 596px;
+          max-width: 596px;
           margin-bottom: 20px;
+          @media only screen and (max-width: 1200px){
+            text-align: center;
+        }
+        @media only screen and (max-width: 450px){
+          font-size: 31px;
+      }
+      @media only screen and (max-width: 450px){
+        font-size: 26px;
+    }
       }
       .registr-subtitle{
         font-weight: 300;
@@ -1110,9 +1131,36 @@ padding-top: 30px;
         line-height: 19px;
         color: #FFFFFF;
         width: 220px;
+
+        @media only screen and (max-width: 1200px){
+          text-align: center;
+          width: auto;
+          
       }
-      .box-speciality{
-        display: flex;
+      }
+        
+        .registr-speciality:hover{
+          background-color: #E5E5E5;
+          color: #1FCD99;
+          transition: .5s;
+          
+        }
+        .box-speciality{
+          display: flex;
+          max-width: 596px;
+          width: 100%;
+          @media only screen and (max-width: 1200px){
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+        @media only screen and (max-width: 570px){
+          max-width: 300px;
+          flex-wrap: wrap;
+          text-align: center;
+      }
+      @media only screen and (max-width: 370px){
+        justify-content: center;
+    }
         .registr-speciality{
           margin-right: 10px;
           border: 1px solid #ffff;
@@ -1120,23 +1168,57 @@ padding-top: 30px;
           padding: 10px;
           color: #FFFFFF;
           cursor: default;
+          max-height: 50px;
+          @media only screen and (max-width: 1200px){
+            margin: 0;
+        }
+        @media only screen and (max-width: 570px){
+          width: 145px;
+          text-align: center;
+          margin: 10px 0;
+      }
+      @media only screen and (max-width: 410px){
+        width: 125px;
+      text-align: center;
+      margin: 10px 0;
+      font-size: 14px;
+  
+    }
+      
+  
         }
         .registr-speciality:hover{
           background-color: #E5E5E5;
           color: #1FCD99;
           transition: .5s;
+         
           
         }
       }
+      }
+      
     }
     .box-register{
       .form-check-input{
         background-color: #FE5C01;
         border-radius: 5px;
       }
+      .register__form{
+        @media only screen and (max-width: 500px){
+          display: flex;
+    flex-direction: column;
+    align-items: center;
+      }
+      }
       .form-floating{
-        width: 447px;
-        height: 65px;
+        max-width: 447px;
+        
+        @media only screen and (max-width: 500px){
+          width: 300px;
+      }
+      @media only screen and (max-width: 380px){
+        width: 270px;
+    }
 
         margin-bottom: 23px;
         .form-select{
@@ -1147,24 +1229,29 @@ font-size: 16px;
 line-height: 19px;
 color: #939393;
 border-radius: 10px;
+height: 80px;
+padding-top: 50px;
+
 
         }
-        label{
-          font-family: 'Roboto';
-font-style: normal;
-font-weight: 300;
-font-size: 16px;
-line-height: 19px;
-color: #5b5b5b;
-        }
+        
         
       }
       
       .form-control{
+        max-width: 447px;
         height: 65px;
         border-radius: 10px;
         margin-bottom: 20px;
+        @media only screen and (max-width: 500px){
+          width: 300px;
       }
+      @media only screen and (max-width: 380px){
+        width: 270px;
+    }
+      
+      }
+      
       .form-check-label{
         margin-bottom: 23px;
         color: #333333;;
@@ -1177,6 +1264,10 @@ color: #5b5b5b;
           font-weight: 700;
           transition: .2s ease-in-out;
         }
+        @media only screen and (max-width: 5495px){
+          display: flex;
+    flex-direction: column;
+      }
       }
       .btn-primary{
         width: 447px;
@@ -1191,6 +1282,12 @@ line-height: 16px;
 background-color:#FE5C01;
 border-color: #FE5C01;
 transition: .15s ease-in-out;
+@media only screen and (max-width: 500px){
+    width: 300px;
+}
+@media only screen and (max-width: 380px){
+  width: 270px;
+}
       }
       .btn-primary:hover{
         box-shadow: 0 0 10px 0 #FE5C01 inset, 0 0 10px 4px #FE5C01;
@@ -1199,7 +1296,7 @@ transition: .15s ease-in-out;
     }
   }
 }
-  }
+  
 
   .footer {
     background: #f1f1f1;

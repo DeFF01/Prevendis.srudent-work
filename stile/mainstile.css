@@ -1088,11 +1088,22 @@ h3 {
   color: #FFFFFF;
   margin-bottom: 50px;
 }
+@media only screen and (max-width: 570px) {
+  .specialists .conteiner .specialists__subtitle {
+    padding: 0 10px;
+  }
+}
 .specialists .conteiner .spicialists__mobile-box {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 570px) {
+  .specialists .conteiner .spicialists__mobile-box {
+    display: none;
+  }
 }
 .specialists .conteiner .spicialists__mobile-box .spicialists__mobile {
   margin-right: 10px;
@@ -1118,7 +1129,18 @@ h3 {
   border-radius: 40px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+@media only screen and (max-width: 1200px) {
+  .specialists .conteiner .registr {
+    justify-content: center;
+  }
+}
+.specialists .conteiner .registr .box-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .specialists .conteiner .registr .box-text .registr-title {
   font-family: "Roboto";
@@ -1127,8 +1149,23 @@ h3 {
   font-size: 34px;
   line-height: 40px;
   color: #FFFFFF;
-  width: 596px;
+  max-width: 596px;
   margin-bottom: 20px;
+}
+@media only screen and (max-width: 1200px) {
+  .specialists .conteiner .registr .box-text .registr-title {
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .specialists .conteiner .registr .box-text .registr-title {
+    font-size: 31px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .specialists .conteiner .registr .box-text .registr-title {
+    font-size: 26px;
+  }
 }
 .specialists .conteiner .registr .box-text .registr-subtitle {
   font-weight: 300;
@@ -1137,8 +1174,39 @@ h3 {
   color: #FFFFFF;
   width: 220px;
 }
+@media only screen and (max-width: 1200px) {
+  .specialists .conteiner .registr .box-text .registr-subtitle {
+    text-align: center;
+    width: auto;
+  }
+}
+.specialists .conteiner .registr .box-text .registr-speciality:hover {
+  background-color: #E5E5E5;
+  color: #1FCD99;
+  transition: 0.5s;
+}
 .specialists .conteiner .registr .box-text .box-speciality {
   display: flex;
+  max-width: 596px;
+  width: 100%;
+}
+@media only screen and (max-width: 1200px) {
+  .specialists .conteiner .registr .box-text .box-speciality {
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .specialists .conteiner .registr .box-text .box-speciality {
+    max-width: 300px;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 370px) {
+  .specialists .conteiner .registr .box-text .box-speciality {
+    justify-content: center;
+  }
 }
 .specialists .conteiner .registr .box-text .box-speciality .registr-speciality {
   margin-right: 10px;
@@ -1147,22 +1215,59 @@ h3 {
   padding: 10px;
   color: #FFFFFF;
   cursor: default;
+  max-height: 50px;
+}
+@media only screen and (max-width: 1200px) {
+  .specialists .conteiner .registr .box-text .box-speciality .registr-speciality {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 570px) {
+  .specialists .conteiner .registr .box-text .box-speciality .registr-speciality {
+    width: 145px;
+    text-align: center;
+    margin: 10px 0;
+  }
+}
+@media only screen and (max-width: 410px) {
+  .specialists .conteiner .registr .box-text .box-speciality .registr-speciality {
+    width: 125px;
+    text-align: center;
+    margin: 10px 0;
+    font-size: 14px;
+  }
 }
 .specialists .conteiner .registr .box-text .box-speciality .registr-speciality:hover {
   background-color: #E5E5E5;
   color: #1FCD99;
   transition: 0.5s;
 }
-.specialists .conteiner .registr .box-register .form-check-input {
+.specialists .conteiner .box-register .form-check-input {
   background-color: #FE5C01;
   border-radius: 5px;
 }
-.specialists .conteiner .registr .box-register .form-floating {
-  width: 447px;
-  height: 65px;
+@media only screen and (max-width: 500px) {
+  .specialists .conteiner .box-register .register__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.specialists .conteiner .box-register .form-floating {
+  max-width: 447px;
   margin-bottom: 23px;
 }
-.specialists .conteiner .registr .box-register .form-floating .form-select {
+@media only screen and (max-width: 500px) {
+  .specialists .conteiner .box-register .form-floating {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .specialists .conteiner .box-register .form-floating {
+    width: 270px;
+  }
+}
+.specialists .conteiner .box-register .form-floating .form-select {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 300;
@@ -1170,34 +1275,45 @@ h3 {
   line-height: 19px;
   color: #939393;
   border-radius: 10px;
+  height: 80px;
+  padding-top: 50px;
 }
-.specialists .conteiner .registr .box-register .form-floating label {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  color: #5b5b5b;
-}
-.specialists .conteiner .registr .box-register .form-control {
+.specialists .conteiner .box-register .form-control {
+  max-width: 447px;
   height: 65px;
   border-radius: 10px;
   margin-bottom: 20px;
 }
-.specialists .conteiner .registr .box-register .form-check-label {
+@media only screen and (max-width: 500px) {
+  .specialists .conteiner .box-register .form-control {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .specialists .conteiner .box-register .form-control {
+    width: 270px;
+  }
+}
+.specialists .conteiner .box-register .form-check-label {
   margin-bottom: 23px;
   color: #333333;
 }
-.specialists .conteiner .registr .box-register .form-check-label a {
+.specialists .conteiner .box-register .form-check-label a {
   color: white;
   text-decoration: none;
 }
-.specialists .conteiner .registr .box-register .form-check-label a:hover {
+.specialists .conteiner .box-register .form-check-label a:hover {
   color: #FE5C01;
   font-weight: 700;
   transition: 0.2s ease-in-out;
 }
-.specialists .conteiner .registr .box-register .btn-primary {
+@media only screen and (max-width: 5495px) {
+  .specialists .conteiner .box-register .form-check-label {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.specialists .conteiner .box-register .btn-primary {
   width: 447px;
   height: 64px;
   border-radius: 32px;
@@ -1210,7 +1326,17 @@ h3 {
   border-color: #FE5C01;
   transition: 0.15s ease-in-out;
 }
-.specialists .conteiner .registr .box-register .btn-primary:hover {
+@media only screen and (max-width: 500px) {
+  .specialists .conteiner .box-register .btn-primary {
+    width: 300px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .specialists .conteiner .box-register .btn-primary {
+    width: 270px;
+  }
+}
+.specialists .conteiner .box-register .btn-primary:hover {
   box-shadow: 0 0 10px 0 #FE5C01 inset, 0 0 10px 4px #FE5C01;
 }
 
