@@ -1347,16 +1347,45 @@ h3 {
   max-width: 1240px;
   width: 100%;
   margin: 0 auto;
-  padding-top: 60px;
+  padding-top: 20px;
 }
 .footer .conteiner .footer__fbox {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 @media only screen and (max-width: 1290px) {
   .footer .conteiner .footer__fbox {
     padding: 0 2%;
   }
+}
+@media only screen and (max-width: 895px) {
+  .footer .conteiner .footer__fbox {
+    justify-content: space-around;
+  }
+}
+@media only screen and (max-width: 605px) {
+  .footer .conteiner .footer__fbox {
+    flex-direction: column;
+  }
+  .footer .conteiner .footer__fbox .footer__element:nth-child(1) {
+    align-self: flex-start;
+  }
+  .footer .conteiner .footer__fbox .footer__element:nth-child(2) {
+    align-self: flex-end;
+  }
+  .footer .conteiner .footer__fbox .footer__element:nth-child(3) {
+    align-self: flex-start;
+  }
+}
+@media only screen and (max-width: 395px) {
+  .footer .conteiner .footer__fbox {
+    flex-direction: initial;
+  }
+}
+.footer .conteiner .footer__fbox .footer__element {
+  margin: 10px;
+  align-self: flex-end;
 }
 .footer .conteiner .footer__fbox .footer__element a {
   text-decoration: none;
@@ -1367,6 +1396,11 @@ h3 {
   line-height: 19px;
   color: #939393;
 }
+@media only screen and (max-width: 395px) {
+  .footer .conteiner .footer__fbox .footer__element .footer-text {
+    display: none;
+  }
+}
 .footer .conteiner .footer__fbox .footer__element .footer__mobile-number a, .footer .conteiner .footer__fbox .footer__element .footer__mail a {
   font-weight: 300;
   font-size: 34px;
@@ -1374,6 +1408,11 @@ h3 {
   color: #333333;
   text-decoration: none;
   position: relative;
+}
+@media only screen and (max-width: 380px) {
+  .footer .conteiner .footer__fbox .footer__element .footer__mobile-number a, .footer .conteiner .footer__fbox .footer__element .footer__mail a {
+    font-size: 29px;
+  }
 }
 .footer .conteiner .footer__fbox .footer__element .footer__mobile-number a:after, .footer .conteiner .footer__fbox .footer__element .footer__mail a:after {
   content: "";
@@ -1398,13 +1437,28 @@ h3 {
   transition: width 0.5s;
 }
 .footer .conteiner .footer__fbox .footer__element .footer__mobile-number, .footer .conteiner .footer__fbox .footer__element .footer__mail, .footer .conteiner .footer__fbox .footer__element .footer__download {
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 .footer .conteiner .footer__fbox .footer__element .footer__privacy-policy, .footer .conteiner .footer__fbox .footer__element .footer__terms-of-use {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #939393;
+}
+.footer .conteiner .footer__fbox .footer__element:nth-child(1) {
+  min-width: 280px;
+}
+.footer .conteiner .footer__fbox .footer__element:nth-child(2) {
+  min-width: 255px;
+}
+.footer .conteiner .footer__fbox .footer__element:nth-child(3) {
+  min-width: 270px;
+}
+@media only screen and (max-width: 395px) {
+  .footer .conteiner .footer__fbox .footer__element:nth-child(3) .footer-text {
+    display: inherit;
+    margin: 10px 0 0 0;
+  }
 }
 .footer .conteiner .mobile-app__link:nth-child(1) {
   margin-right: 10px;

@@ -1305,16 +1305,40 @@ transition: .15s ease-in-out;
       max-width: 1240px;
       width: 100%;
       margin: 0 auto;
-      padding-top: 60px;
+      padding-top: 20px;
       .footer__fbox{
         display: flex;
         justify-content: space-between;
-
+        flex-wrap: wrap;
         @media only screen and (max-width: 1290px){
           padding: 0 2%;
         }
-        .footer__element{
+        @media only screen and (max-width: 895px){
+          justify-content: space-around;
+        }
+        @media only screen and (max-width: 605px){
+          flex-direction: column;
+          .footer__element:nth-child(1){
+            align-self: flex-start;
+        }
+        .footer__element:nth-child(2){
+          align-self: flex-end;
+      }
+      .footer__element:nth-child(3){
+        align-self: flex-start;
+    }
+      }
+        @media only screen and (max-width: 395px){
+          flex-direction: initial;
+         }
+       
 
+
+        .footer__element{
+        margin: 10px;
+            align-self: flex-end;
+            
+          
           a{
             text-decoration: none;
           }
@@ -1325,7 +1349,11 @@ transition: .15s ease-in-out;
             line-height: 19px;
             color: #939393;
           }
-
+          .footer-text{
+            @media only screen and (max-width: 395px){
+              display: none;
+          }
+          }
           .footer__mobile-number a, .footer__mail a{
             font-weight: 300;
             font-size: 34px;
@@ -1333,6 +1361,9 @@ transition: .15s ease-in-out;
             color: #333333;
             text-decoration: none;
             position: relative;
+            @media only screen and (max-width: 380px){
+              font-size: 29px;
+          }
           }
           .footer__mobile-number a:after,.footer__mail a:after{
             content: "";
@@ -1359,7 +1390,7 @@ transition: .15s ease-in-out;
 
           }
           .footer__mobile-number,.footer__mail,.footer__download{
-            margin-bottom: 100px;
+            margin-bottom: 60px;
           }
           .footer__privacy-policy,.footer__terms-of-use{
             font-weight: 400;
@@ -1368,6 +1399,27 @@ transition: .15s ease-in-out;
             color: #939393;
           }
         }
+        .footer__element:nth-child(1){
+          min-width: 280px;
+        }
+        .footer__element:nth-child(2){
+          min-width: 255px;
+        }
+        .footer__element:nth-child(3){
+          min-width: 270px;
+          
+          .footer-text{
+            @media only screen and (max-width: 395px){
+              display: inherit;
+              margin: 10px 0 0 0 ;
+              
+
+          }
+        }
+        }
+        
+      
+      
       }
       .mobile-app__link:nth-child(1){
         margin-right: 10px;
