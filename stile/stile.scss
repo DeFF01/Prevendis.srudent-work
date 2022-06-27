@@ -1018,7 +1018,7 @@ color: #333333;
         position: absolute;
         right: 40px;
         @media only screen and (max-width: 965px){
-          position: initial;
+          position: static;
           order: 2;
           margin-bottom: 45px;
           width: 100%;
