@@ -533,7 +533,7 @@ h3 {
   color: #333333;
   margin-bottom: 24px;
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 395px) {
   .operating-principle .container .info .info__box .ingo__box-left .info__title {
     text-align: center;
   }
