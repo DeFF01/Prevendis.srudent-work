@@ -493,7 +493,7 @@ color: #333333;
     width: 100%;
     margin: 0 auto;
     color: #333333;
-    padding: 0;
+    padding-bottom: 80px;
     .operating-principle__logo{
       font-size: 44px;
       line-height: 52px;
@@ -750,7 +750,7 @@ color: #333333;
       position: relative;
       margin: 0px 10px 10px 10px;
         .analysis__box-title{
-          @media only screen and (max-width: 993px){
+          @media only screen and (max-width: 1035px){
             margin: 0 auto;
               }
           .analysis__title{
@@ -759,14 +759,14 @@ color: #333333;
           line-height: 40px;
           color: #333333;
           margin-bottom: 25px;
-          @media only screen and (max-width: 993px){
+          @media only screen and (max-width: 1035px){
             text-align: center;
               }
 
           }
           .analysis__subtitle{
             max-width: 411px;
-            @media only screen and (max-width: 993px){
+            @media only screen and (max-width: 1035px){
               text-align: center;;
                 }
           }
@@ -774,7 +774,7 @@ color: #333333;
       .slider{
         width: 515px;
         overflow: hidden;
-        @media only screen and (max-width: 993px){
+        @media only screen and (max-width: 1035px){
           margin: 0 auto 75px;
             }
             @media only screen and (max-width: 585px){
@@ -784,8 +784,14 @@ color: #333333;
           .items{
             display: flex;
             .item{
-              margin: 0 5px;
-              transition: all ease 1s;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        transition: all ease 1s;
+        @media only screen and (max-width: 1035px){
+          bottom: -75px;
+          left: 50%;
+        }
             }
           }
         }
@@ -795,7 +801,7 @@ color: #333333;
         bottom: 0;
         left: 0;
         display: flex;
-        @media only screen and (max-width: 993px){
+        @media only screen and (max-width: 1035px){
           bottom: -75px;
           left: 50%;
           transform: translate(-50%, -50%);
@@ -827,70 +833,101 @@ color: #333333;
     .treatment{
       max-width: 1240px;
       padding: 25px;
-      background: #F6F7FB;
       border-radius: 40px;
       display:flex;
+      flex-wrap: wrap;
       justify-content: space-between;
-      background-color: #F6F7FB;;
+      background-color: #F6F7FB;
       position: relative;
-      margin-bottom: 80px;
+      margin: 0px 10px 10px 10px;
       .treatment__box-title{
+        @media only screen and (max-width: 1035px){
+          margin: 0 auto;
+            }
         .treatment__title{
           font-weight: 300;
           font-size: 34px;
           line-height: 40px;
           color: #333333;
           margin-bottom: 25px;
+          @media only screen and (max-width: 1035px){
+            text-align: center;
+              }
+
+          }
+          
         }
         .treatment__subtitle{
-          width: 411px;
-        }
-      }
-      .slider__treatment{
-        width: 515px;
-        overflow: hidden;
-        .slider__container-treatment {
-          .items__treatment{
-            display: flex;
-            .item__treatment{
-              margin: 0 5px;
-              transition: all ease 1s;
+          max-width: 411px;
+          @media only screen and (max-width: 1035px){
+            text-align: center;
+              }
+
+          }
+          .slider__treatment{
+            width: 515px;
+            overflow: hidden;
+            @media only screen and (max-width: 1035px){
+              margin: 0 auto 75px;
+                }
+                @media only screen and (max-width: 585px){
+                  width: 260px;
+                    }
+            .slider__container-treatment {
+              .items__treatment{
+                display: flex;
+                .item__treatment{
+                  margin: 0 5px;
+                  transition: all ease 1s;
+                  @media only screen and (max-width: 1035px){
+                    bottom: -75px;
+                    left: 50%;
+                  }
+                }
+              }
             }
           }
-        }
-      }
-      .arrow-box{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        display: flex;
-        .arrow__treatment{
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          align-content: center;
-          border: none;
-      background: none;
-      text-align: center;
-      margin: 21px 10px;
-      cursor: pointer;
-      width: 75px;
-      height: 75px;
-      padding: 0;
-        }
-        .arrow__treatment:hover{
-          box-shadow: 0 0 20px rgba(0, 0, 0, .2) inset;
-          border-radius: 100%;
-        }
-        .arrow__treatment:active{
-          box-shadow: 0 0 40px rgba(0, 0, 0, .2) inset;
-          border-radius: 100%;
-        }
-      }
+          .arrow-box{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            @media only screen and (max-width: 1035px){
+        bottom: -75px;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
+          }
+            .arrow__treatment{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              align-content: center;
+              border: none;
+          background: none;
+          text-align: center;
+          margin: 21px 10px;
+          cursor: pointer;
+          width: 75px;
+          height: 75px;
+          padding: 0;
+            }
+            .arrow__treatment:hover{
+              box-shadow: 0 0 20px rgba(0, 0, 0, .2) inset;
+              border-radius: 100%;
+            }
+            .arrow__treatment:active{
+              box-shadow: 0 0 40px rgba(0, 0, 0, .2) inset;
+              border-radius: 100%;
+            }
+        }
+      }
+      
+      
+    
     
 
-  }
+  
 
 
 
@@ -903,18 +940,36 @@ color: #333333;
     background: #44BBEE;
     border-radius: 40px;  
     margin: 0 auto;
+    @media only screen and (max-width: 965px){
+      width: auto;
+      margin: 0 10px 10px 10px;
+      
+              }
     .mobile-app__box {
       display: flex;
       flex-direction: column;
       padding: 40px 0 0 40px;
       position: relative;
+      @media only screen and (max-width: 965px){
+        align-items: center;
+        padding: 10px;
+        
+                }
       .mobile-app__title {
-        width: 450px;
+        max-width: 450px;
         font-weight: 300;
         font-size: 44px;
         line-height: 52px;
         color: #FFFFFF;
         margin-bottom: 25px;
+        @media only screen and (max-width: 965px){
+         text-align: center;
+        }
+        @media only screen and (max-width: 500px){
+         padding: 5px;
+         line-height: 40px;
+         margin: 0;
+         }
       }
       .mobile-app__subtitle {
      
@@ -925,16 +980,53 @@ color: #333333;
       color: #FFFFFF;
       width: 310px;
       margin-bottom: 40px;
+      @media only screen and (max-width: 965px){
+        text-align: center;
+        margin-bottom: 15px;
+                 }
+      
+      @media only screen and (max-width: 455px){
+        text-align: center;
+        padding: 15px;
+      }
       }
       .box__link {
         margin-bottom: 120px;
-        .mobile-app__link {
-          margin-right: 10px;
+        @media only screen and (max-width: 965px){
+          margin-bottom: 30px;
+          order: 5;
+                  }
+                  @media only screen and (max-width: 455px){
+                    width: 100%;
+                    display: flex;
+                    justify-content:space-around;
+                  }
+                  @media only screen and (max-width: 350px){
+                   
+                    justify-content:space-between;
+                  }
         }
+        .mobile-app__link:nth-child(2){
+          margin-left: 30px;
+          @media only screen and (max-width: 455px){
+            margin-left: 5px;
+            
+          }
+
       }
       .mobile-app__img {
         position: absolute;
         right: 40px;
+        @media only screen and (max-width: 965px){
+          position: initial;
+          order: 2;
+          margin-bottom: 45px;
+          width: 100%;
+          
+        }
+        @media only screen and (max-width: 510px){
+          height: 100%;
+        }
       }
     }
   }
@@ -1181,13 +1273,3 @@ transition: .15s ease-in-out;
       }
   }
   }
-  
-
-  
-
-
-
-
-
-
-
