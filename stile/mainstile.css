@@ -793,7 +793,7 @@ h3 {
     margin: 0 auto 75px;
   }
 }
-@media only screen and (max-width: 585px) {
+@media only screen and (max-width: 630px) {
   .operating-principle .analysis .slider {
     width: 260px;
   }
@@ -806,6 +806,7 @@ h3 {
   left: 0;
   display: flex;
   transition: all ease 1s;
+  margin-right: 15px;
 }
 @media only screen and (max-width: 1035px) {
   .operating-principle .analysis .slider .slider-container .items .item {
@@ -893,7 +894,7 @@ h3 {
     margin: 0 auto 75px;
   }
 }
-@media only screen and (max-width: 585px) {
+@media only screen and (max-width: 630px) {
   .operating-principle .treatment .slider__treatment {
     width: 260px;
   }
@@ -906,6 +907,7 @@ h3 {
   left: 0;
   display: flex;
   transition: all ease 1s;
+  margin-right: 15px;
 }
 @media only screen and (max-width: 1035px) {
   .operating-principle .treatment .slider__treatment .slider__container-treatment .items__treatment .item__treatment {

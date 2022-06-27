@@ -777,7 +777,7 @@ color: #333333;
         @media only screen and (max-width: 1035px){
           margin: 0 auto 75px;
             }
-            @media only screen and (max-width: 585px){
+            @media only screen and (max-width: 630px){
               width: 260px;
                 }
         .slider-container {
@@ -788,6 +788,7 @@ color: #333333;
         left: 0;
         display: flex;
         transition: all ease 1s;
+        margin-right: 15px;
         @media only screen and (max-width: 1035px){
           bottom: -75px;
           left: 50%;
@@ -870,7 +871,7 @@ color: #333333;
             @media only screen and (max-width: 1035px){
               margin: 0 auto 75px;
                 }
-                @media only screen and (max-width: 585px){
+                @media only screen and (max-width:630px){
                   width: 260px;
                     }
             .slider__container-treatment {
@@ -881,6 +882,7 @@ color: #333333;
                   left: 0;
                   display: flex;
                   transition: all ease 1s;
+                  margin-right: 15px;
                   @media only screen and (max-width: 1035px){
                     bottom: -75px;
                     left: 50%;
